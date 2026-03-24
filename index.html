@@ -1,13 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete Account - ResolveIQ</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #eef2f7, #dbe6f6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: #fff;
+            padding: 30px;
+            width: 380px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .card h1 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            font-size: 13px;
+            color: #444;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #3498db;
+        }
+
+        .delete-btn {
+            width: 100%;
+            padding: 12px;
+            background: #e74c3c;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .delete-btn:hover {
+            background: #c0392b;
+        }
+
+        .note {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .email {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Delete Your Account</h1>
-    <p>If you want to delete your account, please send a request to:</p>
-    <p>Email: resolveiq.support@gmail.com</p>
-    <p>Include your registered email and employee ID.</p>
-    <p>Your data will be deleted within 3-5 working days.</p>
+
+<div class="card">
+    <h1>Delete Account</h1>
+    <p>Request to permanently delete your ResolveIQ account.</p>
+
+    <form>
+        <div class="input-group">
+            <label>Registered Email</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+            <label>Employee ID</label>
+            <input type="text" placeholder="Enter your Employee ID" required>
+        </div>
+
+        <button type="submit" class="delete-btn">Delete Account</button>
+    </form>
+
+    <p class="note">Your account and all related data will be deleted within 3-5 working days after verification.</p>
+
+    <p class="email">Support: resolveiq.support@gmail.com</p>
+</div>
+
 </body>
 </html>
